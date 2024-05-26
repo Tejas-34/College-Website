@@ -1,84 +1,59 @@
-*{
-  margin:0;
-  padding:0;
-  font-family: "Poppins", sans-serif;
-  
-}
-
-.header {
-  min-height:  100vh;
-  width: 100%;
-  background-color: rgb(40, 39, 39);
-  background-position: center;
-  background-size: cover;
-  position:relative;
+.body {
+  background-color: rgb(31, 31, 31);
 }
 
 nav {
-  display:flex;
-  padding:2% 6%;
+  width: 100%;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items:center;
-  
+  padding: 10px 0;
 }
 
-li a{
+nav ul{
+  list-style: none;
+  width: 100%;
+  text-align: right;
+  padding-right:60px ;
+}
+
+nav ul li{
+  display: inline-block;
+  margin: 10px 20px;
+  margin-top: 30px;
+}
+
+nav ul li a{
+  color: whitesmoke;
   text-decoration: none;
 }
 
-.heading-name {
-  color: white;
-  font-size: 25px;
+.logo {
+  color: whitesmoke;
+  font-size: 1.5rem;
+  margin-left: 20px;
+  text-decoration: none;
   font-weight: bold;
 }
 
-.nav-links {
-  flex:1;
-  text-align: right;
-  
-}
-
-.nav-links ul li{
-  list-style:none;
-  display:inline-block;
-  padding:8px 12px;
-  position:relative;
-  color:white;
-  margin:15px;
-}
-
-.nav-links ul li::after{
+nav ul li::after{
   content:'';
   width: 0%;
   height:2px;
   background:white;
   display:block;
   margin:auto;
-  transition: 0.2s;
+  transition: 0.05s;
 
 }
 
-.nav-links ul li:hover::after {
+nav ul li:hover::after {
   width:100%;
 }
 
-.nav-links ul li a{
-  color:white;
-  font-size:15px
-
-}
-
-form {
-  align-self: center;
-  margin:150px;
-  color:white;
-
-}
-
-form input {
-  background-color: lightgray;
-}
-
-button {
-  cursor:pointer;
+#container{
+  max-width: 500px;
+  margin-right: 50px;
+  margin-left: 100px;
+  margin-top: 50px;
 }
