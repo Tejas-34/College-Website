@@ -13,7 +13,9 @@
 </head>
 
 <body class="body">
-  <div class="container footer d-none d-sm-block">
+
+  <div class="d-none d-sm-block">
+  <div class="container footer">
     <nav >
       <a href="index.html" class="logo">RBNB College Studet Helper</a>
       <ul>
@@ -27,9 +29,11 @@
     </nav> 
   </div>
 
+</div>
 
-<nav class="navbar footer d-sm-none">
-
+<div class="d-sm-none">
+<nav class="navbar footer" style="margin-bottom: 60px;">
+  <a href="#" class="logo"> RBNB College <br>Student Helper</a>
   <a href="javascript:void(0);" class="toggle-button" onclick="toggleNav()">
       <span class="bar"></span>
       <span class="bar"></span>
@@ -38,13 +42,15 @@
   
   <div class="navbar-links">
       <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+        <li><a href="#"> Home </a></li>
+        <li><a href="#"> Notes </a></li>
+        <li><a href="#"> HandBook </a></li>
+        <li><a href="#"> Previous Year </a></li>
+        <li><a href="#"> About us </a></li>
       </ul>
   </div>
 </nav>
+</div>
 
 <script>
   function toggleNav() {
@@ -63,7 +69,6 @@
       <div class="col-md-6 position-relative">
         <img src="{{ url_for('static', filename='images/remote-5491798_1920.png') }}" style="width:70%; margin-top: 50px; margin: auto;">
       </div>
-
     </div>
 
   </div>

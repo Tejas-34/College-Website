@@ -101,7 +101,7 @@ nav ul li:hover::after {
 
 /* Style the active link (or home/logo) */
 .active {
-  background-color: #131313;
+  background-color: #232121;
   color: rgb(56, 55, 55);
 }
 
