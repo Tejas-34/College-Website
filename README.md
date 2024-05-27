@@ -1,2 +1,2 @@
 # College-Website
-Create a student helper website
+Creating a student helper website for the use for college curriculam.
