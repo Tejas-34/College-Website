@@ -13,18 +13,45 @@
 </head>
 
 <body class="body">
-  <div class="container">
-    <nav>
-      <a href="#" class="logo">RBNB College Studet Helper</a>
+  <div class="container footer d-none d-sm-block">
+    <nav >
+      <a href="index.html" class="logo">RBNB College Studet Helper</a>
       <ul>
         <li><a href="#"> Home </a></li>
         <li><a href="#"> Notes </a></li>
         <li><a href="#"> HandBook </a></li>
-        <li><a href="#"> Team </a></li>
+        <li><a href="#"> Previous Year </a></li>
+        <li><a href="#"> About us </a></li>
       </ul>
-      <button class="btn btn-primary">Profile</button>
-    </nav>
+      <button class="btn btn-primary" style="margin-top: 0px;">Profile</button>
+    </nav> 
   </div>
+
+
+<nav class="navbar footer d-sm-none">
+
+  <a href="javascript:void(0);" class="toggle-button" onclick="toggleNav()">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+  </a>
+  
+  <div class="navbar-links">
+      <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+      </ul>
+  </div>
+</nav>
+
+<script>
+  function toggleNav() {
+      var navbarLinks = document.querySelector('.navbar-links');
+      navbarLinks.classList.toggle('active');
+  }
+</script>
 
   <div class="container">
     <div class="row align-items-center">
@@ -33,9 +60,8 @@
           Find notes, past question papers, and essential tools to excel academically.<br>
           Join thousands of students who trust us as their go-to resource hub. Take the next step towards success today!</p>
       </div>
-
-      <div class="col-md-6 position-relative" style="transform: perspective(1000px) rotateX(3) rotateY() scale3d(1,1,1);">
-        <img src="/images/hero-img-2-22e4f2c5.svg" style="width: 500px; margin-top: 100px;">
+      <div class="col-md-6 position-relative">
+        <img src="{{ url_for('static', filename='images/remote-5491798_1920.png') }}" style="width:70%; margin-top: 50px; margin: auto;">
       </div>
 
     </div>
