@@ -68,36 +68,6 @@ nav ul li:hover::after {
 
 
 
-/* Style the navigation menu */
-.topnav {
-  overflow: hidden;
-  background-color: #0e0e0e;
-  position: relative;
-}
-
-/* Hide the links inside the navigation menu (except for logo/home) */
-.topnav #myLinks {
-  display: none;
-}
-
-/* Style navigation menu links */
-.topnav a {
-  color: rgb(247, 247, 247);
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-}
-
-/* Style the hamburger menu */
-.topnav a.icon {
-  background: rgb(43, 41, 41);
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
 
 /* Style the active link (or home/logo) */
 .active {
@@ -142,12 +112,12 @@ navbar {
 }
 
 .navbar-links ul {
-  display: flex;
+  display:flex;
   list-style: none;
 }
 
 .navbar-links li {
-  margin-left: 20px;
+  margin-left:20px;
 }
 
 .navbar-links a {
@@ -168,7 +138,7 @@ navbar {
   }
 
   .navbar-links {
-      display: none;
+      display:none;
       width: 100%;
   }
 
@@ -183,6 +153,6 @@ navbar {
   }
 
   .navbar-links.active {
-      display: flex;
+      display:flex;
   }
 }
