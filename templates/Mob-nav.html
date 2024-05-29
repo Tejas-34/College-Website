@@ -1,11 +1,14 @@
 <div class="d-sm-none">
-  <nav class="navbar footer" style="margin-bottom: 60px;">
-    <a href="#" class="logo"> RBNB College <br>Student Helper</a>
-    <a href="javascript:void(0);" class="toggle-button" onclick="toggleNav()">
+  <div style="background-color: rgb(31, 31, 31)">
+  <nav class="navbar footer;">
+    <a href="#" class="logo"> StudyHub </a>
+    <a href="javascript:void(0);" class="toggle-button" onclick="toggleNav()" style="margin-top: 10px;">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
     </a>
+  </div>
+  <hr width="100%" size="4"  noshade style="margin-top:0; color:rgb(31,31,31)">
     
     <div class="navbar-links">
         <ul>
@@ -17,20 +20,45 @@
         </ul>
     </div>
   </nav>
+  
+
+  
+  <div id="display" style="color: rgb(171, 167, 167); font-weight: bold; text-align: center; font-size: 15px; margin-bottom: 20px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"></div>
+  <script>
+    const text = "A little progress each day adds up to big results.";
+    const words = text.split(" ");
+    const displayElement = document.getElementById('display');
+    let index = 0;
+    const delay = 600; // delay in milliseconds
+
+    function displayNextWord() {
+        if (index < words.length) {
+            displayElement.textContent = words[index];
+            index++;
+            setTimeout(displayNextWord, delay);
+        } else {
+            displayElement.textContent = "A little progress each day adds up to big results.";
+        }
+    }
+
+    // Start displaying words
+    displayNextWord();
+</script>
 
 
 
 <div class="container">
   <div class="row align-items-center">
-
-    <div class="col-md-6 position-relative">
+    
+    <div  class="col-md-6 position-relative">
       <img src="{{ url_for('static', filename='images/remote-5491798_1920.png') }}" style="width:80%; position:relative; margin-left: 30px;">
     </div>
 
     <div class="col-md-6">
-      <p style="color: whitesmoke; margin: auto; margin-bottom: 50px;">Elevate your Academic journey with our website!
-        Find notes, past question papers, and essential tools to excel academically.
-        Join thousands of students who trust us as their go-to resource hub. Take the next step towards success today!</p>
+      <p style="color: rgb(171, 167, 167);">Elevate your academic journey with our all-in-one resource hub!<br>
+       Access comprehensive notes, past question papers, and essential tools designed to help you excel. 
+       Join thousands of students who rely on us as their trusted academic partner.
+        Take the next step towards success and unlock your full potential today!</p>
     </div>
     
   </div>
