@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <style>
+ body{
+
+    width: 100%; height: 100%;background-color: #eee;
+ }
+ .menu{
+   margin: 5% 12%;
+  background: transparent;
+
+ }
+ a, #showall
+ {
+ display: inline-block;
+ margin: 0 1%;
+ padding: 3%;
+ border-radius: 11%;
+ -webkit-box-shadow: 0 3px 11px 3px rgba(0, 0,0,0.2);
+ -moz-box-shadow: 0 3px 11px 3px rgba(0, 0,0,0.2);
+ box-shadow: 0 3px 11px 3px rgba(0, 0,0,0.2);
+
+ }
+ a:nth-child(1){
+
+    background-color: red; cursor:  pointer; color: #fff;
+ }
+ a:nth-child(2){
+
+background-color: green; cursor:  pointer; color: #fff;
+}
+a:nth-child(3){
+
+background-color: blue; cursor:  pointer; color: #fff;
+}
+a:nth-child(4){
+
+background-color: orange; cursor:  pointer; color: #fff;
+}
+.target_box{
+margin: 6% 10%;
+background: transparent;
+
+}
+</style>
+    </head>
+       <body>
+    
+        
+
+
+ <section class="menu">
+  <a id="showall"> all</a>
+ <a class="Single" target="1"> first year </a>
+ <a class="Single" target="2"> second year </a> 
+ <a class="Single" target="3"> third year </a>
+   
+ <div class="target_box">
+    <div id="div1" class="target">  
+      <table cellspacing="10" cellpadding="10">
+    <tr>
+    <th> subject</th>
+    <th> download </th>
+    </tr>
+    <tr>
+       <td> c programing</td>
+      <td>  <a href="#"></a></td>
+    </tr>
+    <tr>
+      <td> html  programing</td>
+     <td>  <a href="#"></a></td>
+   </tr>
+   <tr>
+      <td> advanced c programing</td>
+     <td>  <a href="#"></a></td>
+   </tr> <tr>
+      <td>javascript programing</td>
+     <td>  <a href="#"></a></td>
+   </tr>
+   <tr>
+      <td> bootstrap</td>
+     <td>  <a href="#"></a></td>
+   </tr>
+   <tr>
+      <td> D.B.M.S</td>
+     <td>  <a href="#"></a></td>
+   </tr>
+   <tr>
+      <td> R.D.B.M.S</td>
+     <td>  <a href="#"></a></td>
+   </tr>
+    </table>
+   </div>
+    <div id="div2" class="target"> 
+   
+      <table cellspacing="10" cellpadding="10">
+         <tr>
+         <th> subject</th>
+         <th> download </th>
+         </tr>
+         <tr>
+            <td> networking</td>
+           <td>  <a href="#"></a></td>
+         </tr>
+         <tr>
+           <td> data structure</td>
+          <td>  <a href="#"></a></td>
+        </tr>
+        <tr>
+           <td> english</td>
+          <td>  <a href="#"></a></td>
+        </tr> <tr>
+           <td> enviornment</td>
+          <td>  <a href="#"></a></td>
+        </tr>
+        <tr>
+           <td> computer architecture </td>
+          <td>  <a href="#"></a></td>
+        </tr>
+        <tr>
+           <td> microprocessor</td>
+          <td>  <a href="#"></a></td>
+        </tr>
+        <tr>
+           <td> numerical computation method</td>
+          <td>  <a href="#"></a></td>
+        </tr>
+         </table>
+
+   </div>
+    <div id="div3" class="target">   
+      <table cellspacing="10" cellpadding="10">
+         <tr>
+         <th> subject</th>
+         <th> download </th>
+         </tr>
+         <tr>
+            <td> core java</td>
+           <td>  <a href="#"></a></td>
+         </tr>
+         <tr>
+           <td>c# programing</td>
+          <td>  <a href="#"></a></td>
+        </tr>
+        <tr>
+           <td> software engineer</td>
+          <td>  <a href="#"></a></td>
+        </tr> <tr>
+           <td>machine learning</td>
+          <td>  <a href="#"></a></td>
+        </tr>
+        <tr>
+           <td> advanced java </td>
+          <td>  <a href="#"></a></td>
+        </tr>
+        <tr>
+           <td> ASP.NET</td>
+          <td>  <a href="#"></a></td>
+        </tr>
+        <tr>
+           <td> artificial intelligence</td>
+          <td>  <a href="#"></a></td>
+        </tr>
+         </table>  
+   
+   </div>
+ </div>       
+
+ 
+</section>
+
+ <script type="text/javascript">
+  
+    jQuery(function(){
+    jQuery('#showall').click(function(){
+      jQuery('.target').show();
+    });
+    jQuery('.Single').click(function(){
+    jQuery('.target').hide();
+    jQuery('#div'+$(this).attr('target')).show();
+    });
+    });
+  
+  
+</script>
+    </body>
+
+</html>
